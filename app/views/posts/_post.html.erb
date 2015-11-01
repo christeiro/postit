@@ -1,0 +1,8 @@
+<% @post.each do |p| %>
+  <div class="well span8">
+    <h4><%= p.title %></h4>
+    <p><%= p.description %></p>
+    <p><%= p.created_at %></p>
+    <p><%= link_to "View Post", post_path(p) %></p>
+  </div>
+<% end %>

@@ -1,5 +1,5 @@
 <div class="span12">
-	<p class="pull-right">Edit</p>
+	<p class="pull-right">[<%= link_to 'Edit', edit_post_path(@post) %>]</p>
 	<p class="lead"><%= @post.title %></p>
 	<hr/>
 	<p><%= @post.description %></p>

@@ -3,4 +3,8 @@ class Post < ActiveRecord::Base
   has_many :comments, foreign_key: :comment_id
   has_many :post_categories, foreign_key: :post_id
   has_many :categories, through: :post_categories
+
+  validates :title, presence: true
+  validates :url, presence: true
+  validates :description, presence: true
 end
